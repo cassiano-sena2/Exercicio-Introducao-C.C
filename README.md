@@ -1,2 +1,2 @@
-# Exerc-cio-Introdu-o-C.C
+# Exercicio-Introducao-C.C
 fork
