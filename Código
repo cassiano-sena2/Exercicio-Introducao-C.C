@@ -4,18 +4,15 @@ import numpy as np
 import matplotlib.pyplot as plt 
 #from google.colab.patches import cv2_imshow
 
-#############################################
 #abrir a imagem
 img = cv2.imread('data/t1.jpg',1)
 #cv2_imshow(img)
 
-#############################################
 #mostrando a imagem colorida
 cv2.imshow('in', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-#############################################
 #aplicando conversão básica
 #numpy
 img_grayscale_basic = (img[ : , : ,0]+img[ : , : ,1]+img[ : , : ,2])/3
@@ -29,8 +26,6 @@ img_grayscale_basic = np.array(img_grayscale_basic, dtype=np.uint8)
 cv2.imshow('img_grayscale_basic', img_grayscale_basic)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-#############################################
 #aplicando conversão ponderada
 #img_grayscale_basic = 0.299*img[ : , : ,0] + 0.587*img[ : , : ,1] + 0.114*img[ : , : ,2]
 
@@ -44,5 +39,4 @@ cv2.imshow('img_grayscale_basic', img_grayscale_pondered)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-#############################################
 img_grayscale_pondered.shape
