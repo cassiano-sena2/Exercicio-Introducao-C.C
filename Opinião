@@ -1,0 +1,21 @@
+O código se resume em uma forma de conversão de imagem RGB em imagem grayscale, uma grande utilidade para fotógrafos, editores, artistas e usuários comuns que apenas querem dar um
+pequeno toque nas fotos. É uma aplicação simples mas que faz a diferença. Começando com a importação de bibliotecas necessárias, o código parte logo para o processo de carregamento
+da imagem, assim em seguida a apresentando em seu formato original, no caso, colorida. Depois, uma conversão básica para preto e branco é executada, e assim como anteriormente, é  
+mostrada novamente uma imagem, mas dessa vez sua versão "Grayscale" no formato básico. E por último, faz uma operação da conversão ponderada, que seria uma conversão mais "complexa"
+ou "mais exata", sendo que os dados R, G e B não são simplesmente somados e divididos.
+
+Partindo para um lado mais técnico, o código é simples e direto ao ponto, algo que ajuda muito no entendimento para quaisquer usuários. Ele deixa claro suas operações e usa bem do
+espaço. Para a primeira conversão, foi usado matemática básica para converter os dados de Red (R), Green (G) e Blue (B) em uma imagem única com tonalidades opacas, com uma soma
+simples seguida por uma divisão pelo número de dados somados. O resultado pode ser, com muita probabilidade, uma imagem com muito contraste ou pouco, até mesmo as duas, tudo
+dependendo da cor original, o que gera um produto com "borrões" escuros ou claros de mais para serem distinguíveis.
+
+Logo em seguida, a conversão ponderada tenta ser o mais claro possível para o olho humano. É um fato que máquinas não tem facilidade em entender qualquer comportamento ou necessidade
+humana sem um guia criado pelo programador, por isso, os dados deixam de ser baseados numa conta simples e passa a ser uma multiplicação com as variáveis, cada uma individualmente.
+Obviamente, multiplicar por um número menor que 1 (um) resulta em números mais baixos, o que causa a "Grayscale", fazendo aparecer em preto e branco. Esse código é mais completo,
+sua dificuldade está em encontrar os valores corretos para poder aplicar um grayscale eficaz e útil, com o resultado sendo mais amigável ao olho humano, apresentando mais detalhes
+e informações do que a conversão básica.
+
+Por fim, esse código é de extrema utilidade para gravações macro e microscópicas, sendo elas capturas de grandes corpos celestes que alimentam as informações escassas sobre o
+universo, e também de pequenos corpos que habitam todos os lugares como bactérias e vírus. É de grande importância por diminuir a quantidade de dados transportados principalmente
+por satélites extraterrestres como o "Hubble", assim conseguindo informar os dados de imagens incríveis com o mínimo de espaço possível, e a partir das conversões efetuadas,
+pode se colorir artificialmente para obter clareza visual nas informações transmitidas.
